@@ -1,0 +1,50 @@
+.guarantees {
+	padding: 42px 0 50px 0;
+	background: #f6f6f6;
+	&__title {
+		margin-bottom: 35px;
+	}
+
+	&__wrapper {
+		display: grid;
+		grid-template: minmax(265px, auto) / repeat(4, 250px);
+		justify-content: space-between;
+		align-items: start;
+		column-gap: 50px;
+	}
+	&-item {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		flex-direction: column;
+		&__icon {
+			width: 98px;
+			height: 98px;
+			background: #ffffff;
+			border: 1px solid #e8e8e8;
+			border-radius: 100%;
+			padding: 23px;
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			margin-bottom: 15px;
+		}
+
+		&__title {
+			font-weight: 800;
+			font-size: 22px;
+			line-height: 27px;
+			text-align: center;
+			color: #333333;
+			margin-bottom: 7px;
+		}
+		&__desc {
+			font-weight: 500;
+			font-size: 17px;
+			line-height: 25px;
+			text-align: center;
+			color: #333333;
+			width: 209px;
+		}
+	}
+}

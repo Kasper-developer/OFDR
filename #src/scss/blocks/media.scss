@@ -37,6 +37,12 @@
 			gap: 25px;
 		}
 	}
+	.guarantees {
+		&__wrapper {
+			grid-template: minmax(265px, auto) / repeat(3, minmax(250px, auto));
+			gap: 25px 40px;
+		}
+	}
 }
 @media (max-width: 992px) {
 	.header {
@@ -81,6 +87,12 @@
 		&__wrapper {
 			grid-template-columns: repeat(3, 230px);
 			gap: 30px;
+		}
+	}
+	.guarantees {
+		&__wrapper {
+			grid-template: minmax(265px, auto) / repeat(2, minmax(250px, auto));
+			gap: 25px 40px;
 		}
 	}
 }
@@ -274,5 +286,12 @@
 	.title {
 		font-size: 30px !important;
 		line-height: 38px !important;
+	}
+	.guarantees {
+		&__wrapper {
+			grid-template: minmax(265px, auto) / 250px;
+			gap: 20px 0px;
+			justify-content: center;
+		}
 	}
 }
