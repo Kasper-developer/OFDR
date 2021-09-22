@@ -61,7 +61,7 @@ body {
 ._container {
 	max-width: 1170px;
 	margin: 0 auto;
-	@media (max-width: 1200px) {
+	@media (max-width: 1199px) {
 		max-width: 970px;
 	}
 	@media (max-width: 992px) {
@@ -91,6 +91,7 @@ body {
 @import "blocks/guarantees";
 @import "blocks/programs";
 @import "blocks/sertificate";
+@import "blocks/news";
 @import "blocks/media";
 @import "footer";
 @import "home";

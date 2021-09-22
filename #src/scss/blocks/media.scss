@@ -6,7 +6,7 @@
 		background: #afc1ec;
 	}
 }
-@media (max-width: 1200px) {
+@media (max-width: 1199px) {
 	.header {
 		&-main {
 			&__logo {
@@ -49,6 +49,33 @@
 			display: flex;
 			justify-content: space-between;
 			margin: 0 auto;
+		}
+	}
+	.news {
+		&__wrapper {
+			grid-template: minmax(348px, auto) / 421px repeat(2, 254px);
+			justify-content: center;
+			column-gap: 20px;
+		}
+		&-stock {
+			padding: 41px 25px;
+			align-items: center;
+			&__title {
+				width: 205px;
+			}
+			&__decs {
+				width: 208px;
+			}
+			&__img {
+				margin-top: -80px;
+				img {
+					width: 215px;
+				}
+			}
+		}
+		&-item {
+			&_second {
+			}
 		}
 	}
 }
@@ -111,7 +138,6 @@
 			margin: 0 auto;
 		}
 		&__arrow {
-
 			&_next {
 				right: 57px;
 			}
@@ -120,9 +146,42 @@
 			}
 		}
 	}
+	.news {
+		&__wrapper {
+			grid-template: repeat(2, minmax(348px, auto)) / repeat(2, minmax(262px, auto));
+			justify-content: center;
+			row-gap: 25px;
+			grid-template-areas:
+				"main main"
+				"first second";
+		}
+		&-stock {
+			width: 100%;
+			grid-area: main;
+			align-items: start;
+			&__title {
+				width: 272px;
+			}
+			&__desc {
+				width: 241px;
+			}
+			&__img {
+				margin: 0;
+				img {
+					width: 250px;
+				}
+			}
+		}
+		&-item {
+			grid-area: first;
+			&_second {
+				grid-area: second !important;
+			}
+		}
+	}
 }
 
-@media (max-width: 768px) {
+@media (max-width: 767px) {
 	.header {
 		&-main {
 			justify-content: start;
@@ -276,7 +335,7 @@
 	}
 }
 
-@media (max-width: 576px) {
+@media (max-width: 575px) {
 	.header {
 		&-main {
 			&__desc {
@@ -344,6 +403,46 @@
 		}
 		&-slide {
 			margin-right: 0px !important;
+		}
+	}
+	.news {
+		&__wrapper {
+			grid-template: repeat(3, minmax(348px, auto)) / minmax(300px, 90%);
+			grid-auto-rows: minmax(348px, auto);
+			justify-content: center;
+			row-gap: 25px;
+			grid-template-areas:
+				"main"
+				"first"
+				"second";
+		}
+		&-stock {
+			width: 100%;
+			grid-area: main;
+			align-items: start;
+			&__title {
+				width: 272px;
+				span {
+					color: #1f4fa0;
+				}
+			}
+			&__desc {
+				width: 241px;
+			}
+			&__img {
+				display: none;
+				margin: 0;
+				img {
+					width: 250px;
+				}
+			}
+		}
+		&-item {
+			justify-self: center;
+			grid-area: first;
+			&_second {
+				grid-area: second !important;
+			}
 		}
 	}
 }
