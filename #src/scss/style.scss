@@ -38,6 +38,7 @@ $btnColor: linear-gradient(90deg, #f6bd60 0%, #e88952 100%);
 //<ОБНУЛЕНИЕ, ОБЩИЕ ПАРАМЕТРЫ>===============================================================================================
 @import "null";
 body {
+	background: #fffdfd;
 	&._lock {
 		overflow: hidden;
 	}
@@ -60,13 +61,13 @@ body {
 ._container {
 	max-width: 1170px;
 	margin: 0 auto;
-	@media (max-width: $md1 + px) {
+	@media (max-width: 1200px) {
 		max-width: 970px;
 	}
-	@media (max-width: $md2 + px) {
+	@media (max-width: 992px) {
 		max-width: 750px;
 	}
-	@media (max-width: $md3 + px) {
+	@media (max-width: 768px) {
 		max-width: none;
 		padding: 0 10px;
 	}
@@ -82,10 +83,14 @@ body {
 //@import "datepicker";
 //@import "lightgallery";
 //@import "pagging";
+@import "swiper-bundle.min";
 @import "popup";
 @import "header";
 @import "blocks/promo";
 @import "blocks/documents";
+@import "blocks/guarantees";
+@import "blocks/programs";
+@import "blocks/sertificate";
 @import "blocks/media";
 @import "footer";
 @import "home";

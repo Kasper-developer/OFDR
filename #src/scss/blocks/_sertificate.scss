@@ -1,0 +1,42 @@
+.sertificate {
+	background: #f6f6f6;
+	padding: 48px 0 74px 0;
+	&__title {
+		margin-bottom: 35px;
+	}
+	&__wrapper {
+		position: relative;
+	}
+	&-slider {
+		width: 85% !important;
+		display: flex;
+		justify-content: space-between;
+		margin: 0 auto;
+	}
+	&-slide {
+		max-width: 223px;
+		height: 306px;
+		margin-right: 38px !important;
+	}
+	&__arrow {
+		position: absolute;
+		top: 50%;
+		transform: translateY(-50%);
+		-webkit-transform: translateY(-50%);
+		-moz-transform: translateY(-50%);
+		-ms-transform: translateY(-50%);
+		-o-transform: translateY(-50%);
+		width: 21px;
+		height: 39px;
+		cursor: pointer;
+		z-index: 4;
+		&_prev {
+			left: 28px;
+			background: url("../img/icons/arrows/prev-arrow.svg") no-repeat center center;
+		}
+		&_next {
+			right: 28px;
+			background: url("../img/icons/arrows/next-arrow.svg") no-repeat center center;
+		}
+	}
+}

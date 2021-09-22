@@ -61,7 +61,7 @@ if (sliderScrollItems.length > 0) {
 
 function sliders_bild_callback(params) { }
 
-let slider_about = new Swiper('.about__slider', {
+let programsSlider = new Swiper('.programs-slider', {
 	/*
 	effect: 'fade',
 	autoplay: {
@@ -71,46 +71,110 @@ let slider_about = new Swiper('.about__slider', {
 	*/
 	observer: true,
 	observeParents: true,
-	slidesPerView: 1,
-	spaceBetween: 0,
+	slidesPerView: 4,
+	spaceBetween: 28,
 	autoHeight: true,
-	speed: 800,
+	speed: 700,
+	loop: true,
 	//touchRatio: 0,
 	//simulateTouch: false,
-	//loop: true,
 	//preloadImages: false,
 	//lazy: true,
 	// Dotts
-	//pagination: {
-	//	el: '.slider-quality__pagging',
-	//	clickable: true,
-	//},
+	pagination: {
+		el: '.slider-quality__pagging',
+		clickable: true,
+	},
 	// Arrows
 	navigation: {
 		nextEl: '.about__more .more__item_next',
 		prevEl: '.about__more .more__item_prev',
 	},
-	/*
+
 	breakpoints: {
 		320: {
 			slidesPerView: 1,
 			spaceBetween: 0,
 			autoHeight: true,
 		},
+		576: {
+			slidesPerView: 2,
+		},
 		768: {
 			slidesPerView: 2,
-			spaceBetween: 20,
+			spaceBetween: 28,
 		},
 		992: {
 			slidesPerView: 3,
-			spaceBetween: 20,
+			spaceBetween: 28,
 		},
-		1268: {
+		1200: {
 			slidesPerView: 4,
-			spaceBetween: 30,
+			spaceBetween: 28,
 		},
 	},
+	on: {
+		lazyImageReady: function () {
+			ibg();
+		},
+	}
+	// And if we need scrollbar
+	//scrollbar: {
+	//	el: '.swiper-scrollbar',
+	//},
+});
+let sertificateSlider = new Swiper('.sertificate-slider', {
+	/*
+	effect: 'fade',
+	autoplay: {
+		delay: 3000,
+		disableOnInteraction: false,
+	},
 	*/
+	observer: true,
+	observeParents: true,
+	slidesPerView: 4,
+	spaceBetween: 38,
+	autoHeight: true,
+	speed: 700,
+	loop: true,
+	//touchRatio: 0,
+	//simulateTouch: false,
+	//preloadImages: false,
+	//lazy: true,
+	// Dotts
+	/* 	pagination: {
+			el: '.slider-quality__pagging',
+			clickable: true,
+		}, */
+	// Arrows
+	navigation: {
+		nextEl: '.sertificate__arrow_next',
+		prevEl: '.sertificate__arrow_prev',
+	},
+
+	breakpoints: {
+		320: {
+			slidesPerView: 1,
+			spaceBetween: 0,
+			autoHeight: true,
+		},
+		576: {
+			slidesPerView: 2,
+		},
+		768: {
+			slidesPerView: 2,
+			spaceBetween: 28,
+		},
+		992: {
+			slidesPerView: 3,
+			spaceBetween: 28,
+		},
+		1200: {
+			slidesPerView: 4,
+			spaceBetween: 38,
+		},
+	},
 	on: {
 		lazyImageReady: function () {
 			ibg();
