@@ -47,10 +47,32 @@
 	}
 }
 .header {
-	background: url('../img/promo/promo-bg.jpg') no-repeat right center;
+	background: url("../img/promo/promo-bg.jpg") no-repeat right center,
+		url("../img/icons/decorations/oval-2.svg") no-repeat right center,
+		url("../img/icons/decorations/oval-3.svg") no-repeat right center,
+		url("../img/icons/decorations/oval-4.svg") no-repeat right center;
 	background-size: cover;
 	background-color: #fafafb;
 	padding-top: 30px;
+	position: relative;
+	&::before {
+		content: "";
+		position: absolute;
+		top: 88%;
+		left: 35%;
+		width: 16px;
+		height: 16px;
+		background: url("../img/icons/decorations/oval-1.svg") no-repeat center center;
+	}
+	&::after {
+		content: "";
+		position: absolute;
+		top: 42%;
+		left: 46%;
+		width: 36px;
+		height: 36px;
+		background: url("../img/icons/decorations/triangle.svg") no-repeat center center;
+	}
 	&__container {
 		display: flex;
 		flex-wrap: wrap;
@@ -106,6 +128,9 @@
 			color: #333333;
 			display: block;
 			position: relative;
+			&:hover {
+				color: #000000;
+			}
 			&::before {
 				content: "";
 				position: absolute;
@@ -124,6 +149,9 @@
 			margin-top: 3px;
 			display: block;
 			position: relative;
+			&:hover {
+				color: #000000;
+			}
 			&::before {
 				content: "";
 				position: absolute;
@@ -165,7 +193,7 @@
 				bottom: 0;
 				left: 0;
 				width: 0%;
-				height: 2px;
+				height: 1px;
 				background: #333333;
 				transition: all 0.5s;
 				-webkit-transition: all 0.5s;

@@ -8,6 +8,26 @@
 		display: grid;
 		grid-template: minmax(348px, auto) / 555px repeat(2, 262px);
 		column-gap: 30px;
+		position: relative;
+		&::before {
+			content: "";
+			position: absolute;
+			bottom: -20%;
+			left: 33%;
+			width: 40px;
+			height: 40px;
+			transform: rotate(100deg);
+			background: url("../img/icons/decorations/triangle.svg") no-repeat center center;
+		}
+		&::after {
+			content: "";
+			position: absolute;
+			bottom: -35%;
+			left: 28%;
+			width: 31px;
+			height: 31px;
+			background: url("../img/icons/decorations/oval-1.svg") no-repeat center center;
+		}
 	}
 
 	&__btn {
@@ -73,7 +93,7 @@
 	}
 	&-stock {
 		grid-column: 1 / 2;
-		max-width: 555px;	
+		max-width: 555px;
 		display: flex;
 		padding: 41px 32px;
 		background-color: #fafafb;

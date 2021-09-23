@@ -27,7 +27,7 @@ $maxWidth: 1920;
 $maxWidthContainer: 1170;
 $md1: $maxWidthContainer + 12;
 $md2: 992;
-$md3: 768;
+$md3: 767;
 $md4: 480;
 
 $mainColor: #b3c9ff;
@@ -92,8 +92,8 @@ body {
 @import "blocks/programs";
 @import "blocks/sertificate";
 @import "blocks/news";
-@import "blocks/media";
 @import "footer";
+@import "blocks/media";
 @import "home";
 //</ПОДКЛЮЧЕНИЕ ФАЙЛОВ СТИЛЕЙ СТРАНИЦ И ЭЛЕМЕНТОВ>====================================================================================================
 
@@ -111,4 +111,20 @@ body {
 	line-height: 46px;
 	text-align: center;
 	color: #333333;
+}
+
+::-webkit-scrollbar {
+	width: 18px;
+}
+
+::-webkit-scrollbar-track {
+	background: #fafafa;
+}
+::-webkit-scrollbar-thumb {
+	background: $btnColor;
+	border-radius: 5px;
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	-ms-border-radius: 5px;
+	-o-border-radius: 5px;
 }
