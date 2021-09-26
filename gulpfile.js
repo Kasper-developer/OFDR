@@ -58,10 +58,10 @@ let path = {
 };
 
 // Пишем папки которые нужно копировать через запятую
-let foldersArray = ['videos']; // 'videos', 'files' ...
+let foldersArray = ['videos', 'fonts']; // 'videos', 'files' ...
 function copyFolders() {
 	foldersArray.forEach(folderItem => {
-		src(src_folder + "/" + folderItem + "/**/*.*", {})
+		src(src_folder + "/" + folderItem + "/**/*.*", { })
 			.pipe(newer(project_name + "/" + folderItem + "/"))
 			.pipe(dest(project_name + "/" + folderItem + "/"));
 	});
@@ -77,7 +77,7 @@ function browserSync(done) {
 	});
 }
 function html() {
-	return src(path.src.html, {})
+	return src(path.src.html, { })
 		.pipe(fileinclude())
 		.on('error', function (err) {
 			console.error('Error!', err.message);
@@ -86,7 +86,7 @@ function html() {
 		.pipe(browsersync.stream());
 }
 function css() {
-	return src(path.src.css, {})
+	return src(path.src.css, { })
 		.pipe(
 			scss({ outputStyle: 'expanded' }).on('error', scss.logError)
 		)
@@ -99,12 +99,12 @@ function css() {
 		.pipe(browsersync.stream());
 }
 function json() {
-	return src(path.src.json, {})
+	return src(path.src.json, { })
 		.pipe(dest(path.build.json))
 		.pipe(browsersync.stream());
 }
 function js() {
-	return src(path.src.js, {})
+	return src(path.src.js, { })
 		.pipe(fileinclude())
 		.on('error', function (err) {
 			console.error('Error!', err.message);
@@ -187,7 +187,7 @@ function watchFiles() {
 	gulp.watch([path.watch.images], images);
 }
 function cssBuild() {
-	return src(path.src.css, {})
+	return src(path.src.css, { })
 		.pipe(plumber())
 		.pipe(
 			scss({ outputStyle: 'expanded' }).on('error', scss.logError)
@@ -221,7 +221,7 @@ function jsBuild() {
 	let vendorsPath = path.build.js + 'vendors.min.js';
 	del(appPath);
 	del(vendorsPath);
-	return src(path.src.js, {})
+	return src(path.src.js, { })
 		.pipe(plumber())
 		.pipe(fileinclude())
 		.pipe(gulp.dest(path.build.js))
@@ -265,7 +265,7 @@ function imagesBuild() {
 		.pipe(dest(path.build.images))
 }
 function htmlBuild() {
-	return src(path.src.html, {})
+	return src(path.src.html, { })
 		.pipe(plumber())
 		.pipe(fileinclude())
 		.pipe(webphtml())

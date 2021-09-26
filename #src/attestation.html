@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="ru">
+@@include('_head.html',{
+"title":"Аттестация"
+})
+
+<body>
+	<div class="wrapper">
+		@@include('_header-second.html',{})
+		<main class="page">
+			<section class="attestation">
+				<div class="_container">
+					<div class="attestation__wrapper">
+						<div class="attestation-price" data-aos="zoom-in" data-aos-delay="200">
+							<span class="attestation-price__text">Стоимость аттестации</span>
+							<span class="attestation-price__count">3000 ₽</span>
+							<div class="attestation-price__divider"></div>
+							<span class="attestation-price__text">Оформление <span>1 день</span></span>
+							<div class="attestation-price__date">
+								<span class="attestation-price__text">Срок действия </span>
+								<span class="attestation-price__text">I, II, III, IV группы <span>1 год</span></span>
+								<span class="attestation-price__text">V группа 1 или <span>3 года</span></span>
+							</div>
+							<button class="btn attestation-price__btn">Заказать</button>
+						</div>
+						<div class="attestation-desc" data-aos="zoom-in" data-aos-delay="300">
+							<h2 class="attestation-desc__title">Аттестация по электробезопасности</h2>
+							<p class="attestation-desc__text">На все группы допуска до и свыше 1000В с отметкой ГосТехНадзора. Вместе
+								с удостоверением Вы получаете протокол
+								экзаменационной комиссии РосТехНадзора.</p>
+						</div>
+						<div class="attestation-img" data-aos="zoom-in" data-aos-delay="400">
+							<img src="img/attestation/attestation-main.png" alt="image: attestation">
+						</div>
+					</div>
+					<p class="attestation__desc attestation__about" data-aos="fade-right" data-aos-delay="300">Обучение по электробезопасности персонала - обязательное
+						условие для
+						предприятий, чьи сотрудники работают с
+						электричеством и электрическим оборудованием.</p>
+					<div class="attestation-study" data-aos="fade-right" data-aos-delay="400">
+						<h3 class="attestation-study__title">Кому необходимо проходить обучение?</h3>
+						<p class="attestation__desc attestation-study__desc">Lorem Ipsum - это текст-"рыба", часто используемый в
+							печати и
+							вэб-дизайне. Lorem Ipsum является стандартной "рыбой" для
+							текстов на латинице с начала XVI века. В то время некий безымянный печатник создал большую коллекцию
+							размеров и форм
+							шрифтов, используя Lorem Ipsum для распечатки образцов. Lorem Ipsum не только успешно пережил без заметных
+							изменений пять веков, но и перешагнул в электронный дизайн.</p>
+					</div>
+
+					<div class="attestation-must" data-aos="fade-right" data-aos-delay="500">
+						<h3 class="attestation-must__title">Таким образом, повышение квалификации обязаны проходить:</h3>
+						<ul class="attestation-must__list">
+							<li class="attestation-must__item">
+								<p class="attestation-must__text">Сотрудники, впервые поступающим на работу, связанную с обслуживанием
+									электрооборудования;</p>
+							</li>
+							<li class="attestation-must__item">
+								<p class="attestation-must__text">Работники, не проходившие проверки знаний 3 года и более;</p>
+							</li>
+							<li class="attestation-must__item">
+								<p class="attestation-must__text">Сотрудники, претендующие на повышение группы допуска;</p>
+							</li>
+							<li class="attestation-must__item">
+								<p class="attestation-must__text">Неэлектротехнический персонал, деятельность которого прямо или
+									косвенно связана с обслуживанием установок.</p>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</section>
+
+			<section class="guarantees">
+				<div class="_container">
+					<h2 class="title guarantees__title" data-aos="zoom-in" data-aos-delay="200">Какие гарантии вы получаете?</h2>
+					<div class="guarantees__wrapper">
+						<div class="guarantees-item" data-aos="fade-up" data-aos-delay="200">
+							<div class="guarantees-item__icon">
+								<img src="img/guarantees/doc.svg" alt="Icon: document">
+							</div>
+							<h3 class="guarantees-item__title">Документы в срок</h3>
+							<p class="guarantees-item__desc">Мы четко соблюдаем сроки, так как дорожим вашим временем</p>
+						</div>
+						<div class="guarantees-item" data-aos="fade-up" data-aos-delay="300">
+							<div class="guarantees-item__icon">
+								<img src="img/guarantees/favorites.svg" alt="Icon: favorite">
+							</div>
+							<h3 class="guarantees-item__title">100% качество <br> наших услуг</h3>
+							<p class="guarantees-item__desc">Мы несем полную ответственность за свою работу</p>
+						</div>
+						<div class="guarantees-item" data-aos="fade-up" data-aos-delay="400">
+							<div class="guarantees-item__icon">
+								<img src="img/guarantees/file.svg" alt="Icon: file">
+							</div>
+							<h3 class="guarantees-item__title">Гарантия подлинности документов</h3>
+							<p class="guarantees-item__desc">У нас есть все необходимые лицензии и&nbsp;сертификаты</p>
+						</div>
+						<div class="guarantees-item" data-aos="fade-up" data-aos-delay="500">
+							<div class="guarantees-item__icon">
+								<img src="img/guarantees/delivery-truck.svg" alt="Icon: delivery-truck">
+							</div>
+							<h3 class="guarantees-item__title">Гарантия быстрой доставки по всей России.</h3>
+							<p class="guarantees-item__desc">Доставляем в любой город России</p>
+						</div>
+					</div>
+				</div>
+			</section>
+
+
+		</main>
+		@@include('_footer.html',{})
+	</div>
+	@@include('_popup.html',{})
+	@@include('_js.html',{})
+</body>
+
+</html>

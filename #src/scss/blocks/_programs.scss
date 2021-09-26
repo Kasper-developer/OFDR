@@ -1,36 +1,36 @@
 .programs {
 	position: relative;
 	padding: 52px 0 150px 0;
+	&::before {
+		content: "";
+		position: absolute;
+		top: 3%;
+		right: 24%;
+		width: 40px;
+		height: 40px;
+		background: url("../img/icons/decorations/triangle.svg") no-repeat center center;
+		transform: rotate(100deg);
+		-webkit-transform: rotate(100deg);
+		-moz-transform: rotate(100deg);
+		-ms-transform: rotate(100deg);
+		-o-transform: rotate(100deg);
+		-webkit-transform: rotate(100deg);
+	}
+	&::after {
+		content: "";
+		position: absolute;
+		top: 15%;
+		right: 28%;
+		width: 31px;
+		height: 31px;
+		background: url("../img/icons/decorations/oval-4.svg") no-repeat center center;
+	}
 	&__title {
 		margin-bottom: 35px;
 	}
 	&-slider {
 		display: flex;
 		justify-content: space-between;
-		&::before {
-			content: "";
-			position: absolute;
-			top: 3%;
-			right: 24%;
-			width: 40px;
-			height: 40px;
-			background: url("../img/icons/decorations/triangle.svg") no-repeat center center;
-			transform: rotate(100deg);
-			-webkit-transform: rotate(100deg);
-			-moz-transform: rotate(100deg);
-			-ms-transform: rotate(100deg);
-			-o-transform: rotate(100deg);
-			-webkit-transform: rotate(100deg);
-		}
-		&::after {
-			content: "";
-			position: absolute;
-			top: 15%;
-			right: 28%;
-			width: 31px;
-			height: 31px;
-			background: url("../img/icons/decorations/oval-4.svg") no-repeat center center;
-		}
 	}
 	&-slide {
 		display: flex;
@@ -47,7 +47,6 @@
 			height: 149px;
 			object-fit: cover;
 		}
-
 		&__title {
 			font-weight: 800;
 			font-size: 19px;
