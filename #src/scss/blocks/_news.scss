@@ -3,7 +3,17 @@
 	&__title {
 		padding-bottom: 30px;
 	}
-
+	&-wrap {
+		display: grid;
+		grid-template: repeat(2, minmax(348px, auto)) / repeat(4, minmax(262px, auto));
+		justify-content: space-between;
+		grid-auto-rows: minmax(348px, auto);
+		row-gap: 25px;
+		.news-item {
+			grid-column: auto;
+			grid-area: auto;
+		}
+	}
 	&__wrapper {
 		display: grid;
 		grid-template: minmax(348px, auto) / 555px repeat(2, 262px);
@@ -45,6 +55,7 @@
 		padding-top: 11px;
 		margin-top: 45px;
 		cursor: pointer;
+		display: block;
 		&:hover {
 			border: 2px solid #415bb9;
 			color: #415bb9;
@@ -125,6 +136,37 @@
 		&__img {
 			img {
 				max-width: 250px;
+			}
+		}
+	}
+	&-counter {
+		margin-top: 47px;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		&__link {
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			max-width: 28px;
+			height: 28px;
+			margin-right: 5px;
+			padding: 10px;
+			border: 2px solid #d0d0d0;
+			font-weight: bold;
+			font-size: 14px;
+			line-height: 17px;
+			text-align: center;
+			color: #cfcfcf;
+			&:last-child {
+				margin-right: 0;
+			}
+			&:hover {
+				border: 2px solid #4476c0;
+			}
+			&_active {
+				color: #87b0ee;
+				border: 2px solid #87b0ee;
 			}
 		}
 	}

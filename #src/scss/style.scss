@@ -130,3 +130,15 @@ body {
 	-ms-border-radius: 5px;
 	-o-border-radius: 5px;
 }
+
+.breadcrumb {
+	padding-top: 20px;
+	&__link {
+		border-bottom: 1px solid #86afef;
+		color: #86afef;
+		&_active {
+			color: #7d7d7d;
+			border-bottom: 1px solid #7d7d7d;
+		}
+	}
+}
