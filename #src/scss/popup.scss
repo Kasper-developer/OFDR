@@ -58,18 +58,20 @@
 	&__body {
 		transform: scale(0);
 		transition: all 0.3s ease 0s;
-		background-color: #fff;
-		padding: 50px;
+		background-color: #f3f3f3;
+		padding: 35px;
 		width: 100%;
-		max-width: 800px;
+		min-height: 240px;
+		max-width: 465px;
+		border-radius: 7px;
 	}
 	// .popup__close
 	&__close {
-		width: 15px;
-		height: 15px;
+		width: 20px;
+		height: 23px;
 		position: absolute;
-		top: 0px;
-		right: 0px;
+		top: 8px;
+		right: 4px;
 		cursor: pointer;
 		z-index: 30;
 		background: url("../img/icons/close.svg") 0 0 no-repeat;

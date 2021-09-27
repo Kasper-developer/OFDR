@@ -65,6 +65,8 @@
 		}
 
 		&__btn {
+			display: block;
+			padding-top: 16px;
 			width: 211px;
 			height: 50px;
 			background: linear-gradient(90deg, #87aff1 0%, #6c80cb 100%, #6c80cb 100%);

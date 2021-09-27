@@ -14,6 +14,59 @@
 	}
 }
 
+.callback-form {
+	&__input {
+		width: 95%;
+		height: 70px;
+		margin-bottom: 25px;
+		font-weight: 600;
+		font-size: 18px;
+		line-height: 27px;
+		color: #333333;
+	}
+
+	&__name {
+	}
+
+	&__tel {
+	}
+
+	&__textarea {
+		width: 100%;
+		height: 100px;
+		font-weight: 600;
+		font-size: 18px;
+		line-height: 27px;
+		color: #333333;
+		resize: none;
+		display: block;
+		padding: 10px 20px;
+		margin-bottom: 15px;
+		border-radius: 4px !important;
+		-webkit-border-radius: 4px !important;
+		-moz-border-radius: 4px !important;
+		-ms-border-radius: 4px !important;
+		-o-border-radius: 4px !important;
+	}
+	&__btn {
+		display: block;
+		width: 50%;
+		height: 50px;
+		margin: 0 auto;
+		font-weight: 700;
+		font-size: 18px;
+		line-height: 27px;
+		color: #fff;
+		background: linear-gradient(90deg, #87aff1 0%, #6c80cb 100%, #6c80cb 100%);
+		padding: 10px;
+		border-radius: 5px;
+		-webkit-border-radius: 5px;
+		-moz-border-radius: 5px;
+		-ms-border-radius: 5px;
+		-o-border-radius: 5px;
+	}
+}
+
 //</FORM>====================================================================================================
 
 //<BUTTONS (a.btn+tab)>====================================================================================================
@@ -134,10 +187,14 @@ textarea {
 	}
 }
 .input {
-	border-radius: 0 !important;
+	border-radius: 4px;
 	width: 100%;
 	display: block;
 	padding: 0px 20px;
+	-webkit-border-radius: 4px;
+	-moz-border-radius: 4px;
+	-ms-border-radius: 4px;
+	-o-border-radius: 4px;
 	&._focus {
 	}
 	&._error {

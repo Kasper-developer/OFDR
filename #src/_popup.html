@@ -1,7 +1,15 @@
-<div class="popup popup_popup">
+<div class="popup popup_callback">
 	<div class="popup__content">
 		<div class="popup__body">
 			<div class="popup__close"></div>
+			<form action="#" class="callback-form">
+				<input type="text" name="name" class="input callback-form__input callback-form__name"
+					placeholder="Введите ваше имя" required>
+				<input type="tel" name="tel" class="input callback-form__input callback-form__tel"
+					placeholder="Введите ваш телефон" required>
+				<textarea name="message" class="callback-form__textarea" placeholder="Введите сообщение"></textarea>
+				<button type="submit" class="callback-form__btn">Заказать звонок</button>
+			</form>
 		</div>
 	</div>
 </div>
